@@ -7,6 +7,7 @@ const handler = async (event) => {
       headers: { 
         "content-type": "text/html",
         "Netlify-CDN-Cache-Control": "public, max-age=0, stale-while-revalidate=10000",
+        "Cache-Control": "public, max-age=0, must-revalidate"
       },
     }
   } catch (error) {
